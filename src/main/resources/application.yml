@@ -10,9 +10,15 @@ info:
   
 zuul:
   routes:
-    account:
+    batches:
       path: /batches/**
       serviceId: batch-service
+    trainees:
+      path: /trainees/**
+      serviceId: user-service
+    trainers:
+      path: /trainers/**
+      serviceId: user-service
 
 eureka:
   client:
