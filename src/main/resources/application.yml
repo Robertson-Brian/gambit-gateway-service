@@ -13,13 +13,15 @@ zuul:
     batches:
       path: /batches/**
       serviceId: batch-service
+      strip-prefix: false
     trainees:
       path: /trainees/**
       serviceId: user-service
+      strip-prefix: false
     trainers:
       path: /trainers/**
       serviceId: user-service
-
+      strip-prefix: false
 eureka:
   client:
     service-url:
