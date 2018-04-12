@@ -1,3 +1,4 @@
+package com.revature.gambit.gateway.filters;
 ///*
 //*  A filter is too restrictive to do all of the needed authentication, redirect to authentication service
 //*  instead

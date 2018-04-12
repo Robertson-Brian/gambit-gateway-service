@@ -22,6 +22,11 @@ zuul:
       path: /trainers/**
       serviceId: user-service
       strip-prefix: false
+    users:
+      path: /users/**
+      serviceId: user-service
+      strip-prefix: false
+      
 eureka:
   client:
     service-url:

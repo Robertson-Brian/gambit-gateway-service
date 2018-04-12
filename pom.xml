@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>revature</groupId>
-	<artifactId>gateway-service</artifactId>
+	<artifactId>gambit-gateway-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
@@ -91,7 +91,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<mainClass>
-						com.revature.gateway.Application</mainClass>
+						com.revature.gambit.gateway.Application</mainClass>
 					<addResources>true</addResources>
 				</configuration>
 				<executions>
