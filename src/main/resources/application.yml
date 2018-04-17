@@ -1,13 +1,16 @@
-server:
-  port: 8765
-
+#Service Configuration
 spring:
   application:
-    name: gateway-server
+    name: gambit-gateway-service
 
 info:
   component: Edge Server
-  
+
+#Server Configuration
+server:
+  port: 8765
+
+#Zuul Configuration    
 zuul:
   routes:
     batches:
@@ -26,11 +29,6 @@ zuul:
       path: /users/**
       serviceId: user-service
       strip-prefix: false
-      
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
 
 endpoints:
   beans:
@@ -42,3 +40,10 @@ endpoints:
   jolokia:
     enabled: true
     sensitive: false
+
+#Eureka Client Configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_HOME}
+
