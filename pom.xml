@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.revature</groupId>
-	<artifactId>gambit-discovery-service</artifactId>
+	<artifactId>gambit-gateway-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>gambit-discovery-service</name>
+	<name>gambit-gateway-service</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
