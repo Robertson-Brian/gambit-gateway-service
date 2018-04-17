@@ -122,7 +122,7 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<configuration>
 					<!-- Change this to match path to actual Main class -->
-					<mainClass>com.revature.eureka.EurekaApplication</mainClass>
+					<mainClass>com.revature.gambit.gateway.Application</mainClass>
 				</configuration>
 			</plugin>
 
