@@ -1,7 +1,7 @@
 #Service Configuration
 spring:
   application:
-    name: gambit-gateway-service
+    name: gateway-service
 
 info:
   component: Edge Server
