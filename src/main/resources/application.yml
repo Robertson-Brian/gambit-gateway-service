@@ -12,7 +12,6 @@ server:
 
 #Zuul Configuration
 zuul:
-  prefix: /api/v2
   routes:
     batches:
       path: /batches/**
