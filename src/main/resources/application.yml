@@ -10,25 +10,26 @@ info:
 server:
   port: 10000
 
-#Zuul Configuration    
+#Zuul Configuration
 zuul:
+  prefix: /api/v2
   routes:
-    batches:
+    batch:
       path: /batches/**
-      serviceId: batch-service
-      strip-prefix: false
+      stripPrefix: true
+      serviceId: user-service
     trainees:
       path: /trainees/**
+      stripPrefix: true
       serviceId: user-service
-      strip-prefix: false
     trainers:
       path: /trainers/**
+      stripPrefix: true
       serviceId: user-service
-      strip-prefix: false
     users:
       path: /users/**
+      stripPrefix: true
       serviceId: user-service
-      strip-prefix: false
 
 endpoints:
   beans:
@@ -46,4 +47,3 @@ eureka:
   client:
     service-url:
       defaultZone: ${EUREKA_HOME}
-
