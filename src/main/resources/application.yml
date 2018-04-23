@@ -14,10 +14,10 @@ server:
 zuul:
   prefix: /api/v2
   routes:
-    batch:
+    batches:
       path: /batches/**
       stripPrefix: true
-      serviceId: user-service
+      serviceId: batch-service
     trainees:
       path: /trainees/**
       stripPrefix: true
