@@ -1,3 +1,15 @@
+#Service Configuration
+spring:
+  application:
+    name: gateway-service
+
+info:
+  component: Edge Server
+
+#Server Configuration
+server:
+  port: 10000
+
 #Zuul Configuration    
 zuul:
   routes:
@@ -28,3 +40,10 @@ endpoints:
   jolokia:
     enabled: true
     sensitive: false
+
+#Eureka Client Configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_HOME}
+
