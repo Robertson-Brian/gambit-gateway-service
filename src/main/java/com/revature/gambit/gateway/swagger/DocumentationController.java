@@ -13,7 +13,7 @@ import springfox.documentation.swagger.web.SwaggerResourcesProvider;
 /***
  * DocumentationController is responsible for establishing Swagger
  * documentation. Swagger ui can be accessed at:
- * http://localhost:8800/swagger-ui.html
+ * http://localhost:10000/swagger-ui.html
  * 
  * @author Unknown
  */
@@ -28,6 +28,7 @@ public class DocumentationController implements SwaggerResourcesProvider {
 		List<SwaggerResource> resources = new ArrayList<>();
 		resources.add(swaggerResource("batches", "/batches/v2/api-docs", "2.0"));
 		resources.add(swaggerResource("users", "/users/v2/api-docs", "2.0"));
+		resources.add(swaggerResource("skills", "/skills/v2/api-docs", "2.0"));
 
 		return resources;
 	}

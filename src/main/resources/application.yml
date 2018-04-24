@@ -29,6 +29,10 @@ zuul:
       path: /users/**
       stripPrefix: true
       serviceId: user-service
+    skills:
+      path: /skills/**
+      stripPrefix: true
+      serviceId: skills-service
 
 endpoints:
   beans:
