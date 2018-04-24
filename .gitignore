@@ -20,6 +20,8 @@
 **/.recommenders/**
 **/Servers
 **/.springBeans
+Dockerfile
+mvnw*
 
 #IDEA
 **/.idea/

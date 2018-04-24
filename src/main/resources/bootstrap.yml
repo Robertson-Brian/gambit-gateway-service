@@ -1,10 +1,16 @@
-spring: 
+#Server Configuration
+server:
+  port: 8765
+
+#Spring Configuration
+spring:
   application: 
-    name: zuul
+    name: gateway-service
   cloud: 
     config: 
       uri: http://localhost:8888
 
-security:
-  basic:
-    enabled: false
+#Eureka Configuration
+eureka:
+  client:
+    register-with-eureka: true
