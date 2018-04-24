@@ -15,7 +15,7 @@ import springfox.documentation.swagger.web.SwaggerResourcesProvider;
  * documentation. Swagger ui can be accessed at:
  * http://localhost:10000/swagger-ui.html
  * 
- * @author Unknown
+ * @author Ismael Khalil
  */
 
 @Component
