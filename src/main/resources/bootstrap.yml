@@ -1,0 +1,11 @@
+#Service Configuration
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    config:
+      uri: {CONFIG_HOME}
+
+#Server Configuration
+server:
+  port: 10000
