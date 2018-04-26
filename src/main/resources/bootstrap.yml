@@ -8,7 +8,7 @@ spring:
     name: gateway-service
   cloud: 
     config: 
-      uri: https://gambit-config-server-brash-porcupine.cfapps.io
+      uri: ${CONFIG_HOME}
 
 #Eureka Configuration
 eureka:
