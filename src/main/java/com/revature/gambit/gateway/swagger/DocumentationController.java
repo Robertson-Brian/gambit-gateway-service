@@ -17,7 +17,6 @@ import springfox.documentation.swagger.web.SwaggerResourcesProvider;
  * 
  * @author Ismael Khalil
  */
-
 @Component
 @Primary
 @EnableAutoConfiguration
@@ -28,7 +27,7 @@ public class DocumentationController implements SwaggerResourcesProvider {
 		List<SwaggerResource> resources = new ArrayList<>();
 		resources.add(swaggerResource("batches", "/batches/v2/api-docs", "2.0"));
 		resources.add(swaggerResource("users", "/users/v2/api-docs", "2.0"));
-		resources.add(swaggerResource("skills", "/skills/v2/api-docs", "2.0"));
+		resources.add(swaggerResource("skill", "/skill/v2/api-docs", "2.0"));
 
 		return resources;
 	}
